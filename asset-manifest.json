@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Room_Booking_System/static/css/main.76cc1efd.css",
+    "main.js": "/Room_Booking_System/static/js/main.908d22cf.js",
+    "index.html": "/Room_Booking_System/index.html",
+    "main.76cc1efd.css.map": "/Room_Booking_System/static/css/main.76cc1efd.css.map",
+    "main.908d22cf.js.map": "/Room_Booking_System/static/js/main.908d22cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76cc1efd.css",
+    "static/js/main.908d22cf.js"
+  ]
+}
