@@ -1,0 +1,331 @@
+.hotel-details {
+  padding: 32px 0;
+  background: var(--bg-light);
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+  height: 480px;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.main-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.main-image:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-sidebar {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.view-all-photos {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.hotel-header {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.hotel-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.hotel-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.hotel-header .location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-gray);
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.hotel-meta {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.rating-large {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-badge-large {
+  background: var(--success-green);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.reviews-large {
+  color: var(--text-gray);
+  font-size: 15px;
+}
+
+.hotel-description {
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+.amenities-section {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.amenities-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-light);
+  border-radius: 8px;
+}
+
+.amenity-icon {
+  font-size: 24px;
+}
+
+.rooms-section {
+  margin-top: 32px;
+}
+
+.rooms-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-dark);
+}
+
+.room-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.room-filters select {
+  padding: 12px 16px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.room-filters select:focus {
+  border-color: var(--primary-red);
+}
+
+.rooms-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.room-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.room-card:hover {
+  box-shadow: 0 8px 32px rgba(238, 46, 36, 0.12);
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.room-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.room-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.room-capacity {
+  color: var(--text-gray);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.amenities {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: var(--text-gray);
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.room-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary-red);
+}
+
+.price-label {
+  font-size: 14px;
+  color: var(--text-gray);
+  font-weight: 400;
+}
+
+.reviews-section {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  margin-top: 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.reviews-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.review-card {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.review-card:last-child {
+  border-bottom: none;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.review-rating {
+  color: #FFB400;
+}
+
+.review-text {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+    height: 300px;
+  }
+  
+  .gallery-sidebar {
+    display: none;
+  }
+  
+  .room-card {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,598 @@
+/* Reviews Page Styles */
+.reviews-page {
+  min-height: 100vh;
+  background: var(--bg-light);
+}
+
+/* Hero Section */
+.reviews-hero {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(135deg, var(--deep-brown) 0%, var(--luxury-brown) 50%, var(--primary-gold) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reviews-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920') center/cover;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.reviews-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(44, 36, 22, 0.8) 0%, rgba(139, 115, 85, 0.6) 100%);
+  z-index: 1;
+}
+
+.reviews-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.reviews-hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+}
+
+.reviews-hero-content p {
+  font-size: 20px;
+  opacity: 0.95;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Rating Summary Section */
+.rating-summary {
+  padding: 80px 0;
+  background: var(--warm-white);
+}
+
+.summary-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  padding: 50px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.summary-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid var(--border-color);
+}
+
+.average-rating {
+  text-align: center;
+}
+
+.rating-number {
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--primary-gold);
+  display: block;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.star {
+  cursor: default;
+  transition: transform 0.2s ease;
+}
+
+.star.interactive {
+  cursor: pointer;
+}
+
+.star.interactive:hover {
+  transform: scale(1.2);
+}
+
+.total-reviews {
+  font-size: 16px;
+  color: var(--text-gray);
+  margin-top: 8px;
+}
+
+.summary-right h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.star-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  min-width: 50px;
+}
+
+.star-label svg {
+  color: var(--primary-gold);
+  font-size: 14px;
+}
+
+.rating-bar {
+  flex: 1;
+  height: 12px;
+  background: var(--bg-light);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background: var(--gradient-gold);
+  border-radius: 20px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+.rating-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-gray);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Featured Testimonials Section */
+.featured-testimonials {
+  padding: 80px 0;
+  background: var(--bg-light);
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: var(--text-gray);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-slider {
+  padding: 20px 0 60px;
+}
+
+.testimonial-slide {
+  padding: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s ease;
+}
+
+.testimonial-slide:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-dark);
+  font-style: italic;
+  flex: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.testimonial-author img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-gold);
+}
+
+.testimonial-author h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.testimonial-author p {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+/* Reviews Grid Section */
+.reviews-grid-section {
+  padding: 80px 0;
+  background: var(--warm-white);
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.reviews-header .section-title {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Review Form */
+.review-form-container {
+  padding: 40px;
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.review-form-container h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background: var(--warm-white);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-gold);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.success-icon {
+  font-size: 72px;
+  color: var(--success-green);
+  margin-bottom: 24px;
+  animation: scaleIn 0.6s ease-out;
+}
+
+.success-message h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.success-message p {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+/* Reviews Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.review-card {
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+.reviewer-info img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-gold);
+}
+
+.reviewer-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--success-green);
+  font-weight: 600;
+}
+
+.verified-badge svg {
+  font-size: 12px;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  flex: 1;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  font-size: 13px;
+}
+
+.review-hotel {
+  color: var(--primary-gold);
+  font-weight: 600;
+}
+
+.review-date {
+  color: var(--text-light);
+}
+
+/* Loading Skeleton */
+.skeleton {
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton-header {
+  height: 48px;
+  background: var(--bg-light);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.skeleton-text {
+  height: 16px;
+  background: var(--bg-light);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.skeleton-text:last-child {
+  width: 70%;
+}
+
+/* Swiper Pagination */
+.testimonials-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--text-light);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.testimonials-slider .swiper-pagination-bullet-active {
+  background: var(--primary-gold);
+  opacity: 1;
+  width: 32px;
+  border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .summary-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .summary-left {
+    border-right: none;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 40px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-hero {
+    height: 300px;
+  }
+
+  .reviews-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .reviews-hero-content p {
+    font-size: 16px;
+  }
+
+  .rating-summary,
+  .featured-testimonials,
+  .reviews-grid-section {
+    padding: 50px 0;
+  }
+
+  .summary-card {
+    padding: 30px;
+  }
+
+  .rating-number {
+    font-size: 56px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .reviews-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .reviews-header .btn {
+    width: 100%;
+  }
+
+  .review-form-container {
+    padding: 24px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-slide {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .rating-number {
+    font-size: 48px;
+  }
+
+  .summary-card {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .review-card {
+    padding: 20px;
+  }
+}
