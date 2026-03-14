@@ -65,7 +65,7 @@ npm install
 Create `backend/.env`:
 ```env
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/hotel-booking
+MONGODB_URI=// add your mong
 JWT_SECRET=your_jwt_secret_key_here
 RAZORPAY_KEY_ID=rzp_test_your_key_id
 RAZORPAY_KEY_SECRET=your_razorpay_secret
