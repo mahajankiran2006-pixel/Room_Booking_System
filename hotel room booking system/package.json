@@ -1,0 +1,27 @@
+{
+  "name": "hotel-room-booking-system",
+  "version": "1.0.0",
+  "description": "hotel booking system",
+  "keywords": [
+    "full",
+    "stack",
+    "room",
+    "booking",
+    "system"
+  ],
+  "homepage": "https://github.com/mahajankiran2006-pixel/Room_Booking_System#readme",
+  "bugs": {
+    "url": "https://github.com/mahajankiran2006-pixel/Room_Booking_System/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahajankiran2006-pixel/Room_Booking_System.git"
+  },
+  "license": "ISC",
+  "author": "kiran mahajan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  }
+}
